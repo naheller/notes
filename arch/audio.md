@@ -31,4 +31,4 @@ Note: Some of the above services may not be essential to getting basic audio pla
 SOLVED!
 It appears I needed the `sof-firmware` package. Now `/proc/asound/cards` is populated with something. I think that my Intel sound card just didn't have the necessary firmware or driver. 
 
-In the output of `lspci -v | grep -A7 -i audio` that my Intel audio device uses a kerbel driver prefixed with `sof-audio`, so that indicates to me that it needed something that the `sof-firmware` provided.
+In the output of `lspci -v | grep -A7 -i audio` that my Intel audio device uses a kernel driver prefixed with `sof-audio`, so that indicates to me that it needed something that the `sof-firmware` provided.
