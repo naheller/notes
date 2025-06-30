@@ -11,7 +11,7 @@ ok i installed neovim. it does not appear to use my vanilla .vimrc because relat
 
 ## config file
 
-it looks like neovim expects a config file at ~/.config/nvim/init.vim. This does not exist off a fresh install. 
+it looks like neovim expects a config file at ~/.config/nvim/init.vim. This does not exist off a fresh install. Update June 2025: using `init.lua` instead.
 
 the env variable `$MYVIMRC` points to the above init file. if i make changes to the file, i can reload any open editors with: `:reload $MYVIMRC`
 
@@ -23,6 +23,10 @@ the env variable `$MYVIMRC` points to the above init file. if i make changes to 
 - checkhealth: run health checks and get some general info on neovim install
 - verbose <command>: run command with verbose output
   - TODO: multi-line verbose output being cut off. figure out how to expand command region
+- ls: list buffers
+- b<num>: go to buffer <num>
+- vs <filename>: vertical split
+- sp <filename>: horizontal split
 
 ## clipboard
 

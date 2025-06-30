@@ -2,7 +2,10 @@
 
 wayland displayer server installed by default
 
+Update June 2025: Sway was installed as part of archinstall and so the below sections `install swayvm` and `start sway...` were not carried out on this install.
+
 ## install swayvm
+
 - needs systemd-login (already installed) and polkit
 
 install polkit
@@ -23,6 +26,9 @@ exec sway
 fi
 
 ## sway bar
+
+Update June 2025: Now using waybar instead of i3blocks. See `waybar` section.
+
 update font in sway bar in ~/.config/sway/config:
 
 in bar section, add "font pango:monospace bold
@@ -82,3 +88,8 @@ interval=10
   - Turns off external displays (TODO: Understand how swaymsg works)
   - Locks screen before sleep (DONE: Implement sleep on idle)
 
+## Waybar
+
+Having started fresh with archinstall in June 2025, waybar was installed alongside sway. Waybar's config lives in `~/.config/waybar` (symlinked from dotfiles).
+
+The config process is a little more straightforward with the use of modules. There is also a CSS stylesheet that I'm in the process of customizing. Seems nice.
