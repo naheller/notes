@@ -28,10 +28,24 @@ First tested with the [[brave.md]] package. See there for more details.
 
 I'll follow the yay readme for the following steps.
 
-TODO: Get copy/paste working correctly across apps/windows, so I can do something useful like copy the readme URL here. 
+DONE: Get copy/paste working correctly across apps/windows, so I can do something useful like copy the readme URL here. 
 
-Whether or not i'm using yay, it looks like i'll need the `base-devel` package group installed. I'll also need git, which i already have. Fun fact: the `--needed` flag to pacman installs makes sure that any packages in the install list that already exist in the system are not reinstalled.
+Whether or not i'm using yay, it looks like i'll need the `base-devel` package group installed (Note June 2025: `base-devel` is included as part of the desktop profile during archinstall).
+
+I'll also need git, which i already have. Fun fact: the `--needed` flag to pacman installs makes sure that any packages in the install list that already exist in the system are not reinstalled.
 
 TL;DR is that I'll clone down the yay repo, cd into it, and run `makepkg -si` there. 
 
 QUESTION: Where should I keep the yay repo folder?
+
+## Paru
+
+Paru is an alternative for Yay that's written in rust. To download or upgrade:
+
+1. git clone https://aur.archlinux.org/paru.git
+2. cd paru
+3. makepkg -si
+
+# commands
+
+- paru <package>: interactiively search and install package

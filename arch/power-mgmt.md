@@ -1,5 +1,7 @@
 # power management
 
+Update June 2025: Following the fresh archinstall, I'm no longer using PPD. Upower is still installed, however, as a dependency of waybar. This time I'll be trying cpu-autofreq. 
+
 ## TLP
 
 - install via pacman
@@ -28,3 +30,13 @@ once installed, run `powerprofilesctl` to see currently active power profile
 ## upower
 
 this was installed as a dependency by ppd. i may be able to use this to output battery discharge rate to the sway bar. 
+
+## auto-cpufreq
+
+As of the June 2025 archinstall, I'll be trying out cpu-autofreq as a minimal power mgmt solution. It's on the [[aur]] and i've installed it using paru.
+
+After install I need to enable the service with `systemctl enable --now auto-cpufreq` so it starts automatically.
+
+Then, I created a config file at `~/.config/auto-cpufreq/auto-cpufreq.conf`, symlinked from my dotfiles repo. The contents of the config file were pasted from an example in the package github readme.
+
+Running `sudo auto-cpufreq --monitor` pulls up a dashboard showing cpu and battery stats. It also seems to be using the settings defined in the config file I created. 

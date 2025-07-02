@@ -66,3 +66,8 @@ Some regex:
 - Search and replace across line range: `2,6/<existing-text>/<new-text>/g`
   - Example line range here being 2-6
 - Note: Omitting `/g` in the above commands will replace only the *first* instance of the matching string on each line
+
+## cool things
+
+- shift-k: open man page in horizontal split for the word under the cursor (if one exists)
+
