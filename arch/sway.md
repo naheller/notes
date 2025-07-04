@@ -93,3 +93,7 @@ interval=10
 Having started fresh with archinstall in June 2025, waybar was installed alongside sway. Waybar's config lives in `~/.config/waybar` (symlinked from dotfiles).
 
 The config process is a little more straightforward with the use of modules. There is also a CSS stylesheet that I'm in the process of customizing. Seems nice.
+
+### Fonts and icons
+
+The stylesheet says that `otk-font-awesome` is required for fonts.
